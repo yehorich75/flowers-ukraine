@@ -4,10 +4,12 @@ extends layout/app
 block page 
     include chunk/header
 
-    h1 Main
+    h1 Main !!!
 
     ul
         each item in news
-            li= item.name
+            li
+                h3= item.name
+                p= item.body
 
     include chunk/footer
