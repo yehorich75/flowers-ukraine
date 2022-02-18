@@ -9,11 +9,12 @@
 <body>
 
 @@include("chunk/header.html")
-    
-    <h1>Main 111</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, maxime.</p>
 
-@@loop("chunk/news-item.html", "../../data/news.json")
+<main class="main">
+    @@loop("chunk/news-item.html", "../../data/news.json")
+    @@include("chunk/main.html")
+</main>
+    
 
 @@include("chunk/footer.html")
 
